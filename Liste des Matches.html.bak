@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Matches</title>
+    <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .match-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .match {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .match h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .match p {
+      font-size: 16px;
+      color: #666;
+    }
+
+    .match .result {
+      font-weight: bold;
+    }
+
+    .match:last-child {
+      border-bottom: none;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="match-container">
+      <div class="match">
+        <h3><a href="mailto:file:///C:/Users/User/Desktop/site%20web/html/D%C3%A9tails%20du%20Match.html"
+            target="_parent" title="match">Match 1</a></h3>
+        <p>Date: 10 Janvier 2024</p>
+        <p>Lieu: Stade Municipal</p>
+        <p class="result">Résultat: Victoire</p>
+      </div>
+      <div class="match">
+        <h3>Match 2</h3>
+        <p>Date: 15 Janvier 2024</p>
+        <p>Lieu: Stade Olympique</p>
+        <p class="result">Résultat: Défaite</p>
+      </div>
+      <div class="match">
+        <h3>Match 3</h3>
+        <p>Date: 20 Janvier 2024</p>
+        <p>Lieu: Stade National</p>
+        <p class="result">Résultat: Match nul</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails du Match</title>
+    <style>
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.match-details {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.match-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.match-details p {
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.match-details .team {
+  font-weight: bold;
+}
+
+.match-details .result {
+  font-weight: bold;
+  color: green;
+}
+
+.match-details .location {
+  color: #666666;
+}
+
+img:hover {
+  text-align: center;
+}
+
+</style>
+  </head>
+  <body>
+    <div class="match-details">
+      <h2>Details du Match</h2>
+      <p style="text-align: left;"><span class="team">Équipe Locale:</span> Real
+        Madrid<img src="file:///C:/Users/User/Downloads/t%C3%A9l%C3%A9charg%C3%A9.png"
+          alt="" style="width: 19px; height: 25px;"></p>
+      <p><span class="team">Équipe Visiteur:</span> FC Barcelone<img src="file:///C:/Users/User/Downloads/t%C3%A9l%C3%A9charg%C3%A9%20%281%29.png"
+          alt="" style="width: 19px; height: 20px;"></p>
+      <p><span class="result"><a href="https://www.google.com/search?q=barcelona+vs+real+madrid&amp;source=lmns&amp;bih=746&amp;biw=1482&amp;client=opera&amp;hs=BWn&amp;hl=fr&amp;sa=X&amp;ved=2ahUKEwi3gIKd5JuEAxWSVKQEHbuzA7oQ0pQJKAB6BAgBEAI#sie=m;/g/11l5k1c86n;2;/m/03kwlb;dt;fp;1;;;">Résultat</a>:</span>
+        Victoire de Real Madrid</p>
+      <p><span class="location">Lieu:</span> Santiago Bernabéu</p>
+      <p><span class="location">Date:</span> 10 Février 2024</p>
+    </div>
+  </body>
+</html>

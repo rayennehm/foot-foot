@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Questions sur le Football</title>
+    <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .submit-button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .submit-button:hover {
+      background-color: #0056b3;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .incorrect {
+      color: red;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Jeu de Questions sur le Football</h1>
+      <div class="question">
+        <h2>Question 1: Qui a remporté la Coupe du Monde de la FIFA 2018 ?</h2>
+        <ul>
+          <li><input name="q1" value="a" type="radio"> France</li>
+          <li><input name="q1" value="b" type="radio"> Brésil</li>
+          <li><input name="q1" value="c" type="radio"> Allemagne</li>
+        </ul>
+      </div>
+      <div class="question">
+        <h2>Question 2: Qui est le meilleur buteur de tous les temps en Ligue
+          des Champions ?</h2>
+        <ul>
+          <li><input name="q2" value="a" type="radio"> Lionel Messi</li>
+          <li><input name="q2" value="b" type="radio"> Cristiano Ronaldo</li>
+          <li><input name="q2" value="c" type="radio"> Neymar</li>
+        </ul>
+      </div>
+      <div class="question">
+        <h2>Question 3: Quel club a remporté le plus de titres en Premier League
+          ?</h2>
+        <ul>
+          <li><input name="q3" value="a" type="radio"> Manchester United</li>
+          <li><input name="q3" value="b" type="radio"> Liverpool</li>
+          <li><input name="q3" value="c" type="radio"> Chelsea</li>
+        </ul>
+      </div>
+      <button class="submit-button" onclick="checkAnswers()">Soumettre</button>
+      <div class="message" id="message"></div>
+    </div>
+    <script>
+    function checkAnswers() {
+      var q1Answer = document.querySelector('input[name="q1"]:checked');
+      var q2Answer = document.querySelector('input[name="q2"]:checked');
+      var q3Answer = document.querySelector('input[name="q3"]:checked');
+      var message = document.getElementById('message');
+
+      if (q1Answer && q1Answer.value === "a" &&
+          q2Answer && q2Answer.value === "b" &&
+          q3Answer && q3Answer.value === "a") {
+        message.textContent = "Bien joué! Toutes les réponses sont correctes!";
+        message.className = "message correct";
+      } else {
+        message.textContent = "Désolé, certaines réponses sont incorrectes.";
+        message.className = "message incorrect";
+      }
+    }
+  </script>
+  </body>
+</html>
